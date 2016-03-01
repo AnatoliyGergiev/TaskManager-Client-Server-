@@ -1,0 +1,14 @@
+c:\users\gerg_kz44\documents\visual studio 2013\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+c:\users\gerg_kz44\documents\visual studio 2013\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+c:\users\gerg_kz44\documents\visual studio 2013\Projects\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+c:\users\gerg_kz44\documents\visual studio 2013\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+c:\users\gerg_kz44\documents\visual studio 2013\Projects\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+E:\C# TaskManager\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+E:\C# TaskManager\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+E:\C# TaskManager\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\Анатолий\Dropbox\Воскресенье\Сетевое программирование .NET\C# TaskManager\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Анатолий\Dropbox\Воскресенье\Сетевое программирование .NET\C# TaskManager\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\Анатолий\Dropbox\Воскресенье\Сетевое программирование .NET\C# TaskManager\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\Анатолий\Dropbox\Воскресенье\Сетевое программирование .NET\C# TaskManager\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Анатолий\Dropbox\Воскресенье\Сетевое программирование .NET\C# TaskManager\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Анатолий\Dropbox\Воскресенье\Сетевое программирование .NET\C# TaskManager\ConsoleApplication1\ConsoleApplication1\obj\Debug\Server.csprojResolveAssemblyReference.cache
