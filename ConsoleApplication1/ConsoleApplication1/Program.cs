@@ -25,7 +25,7 @@ namespace ConsoleApplication1
                 uiContext = SynchronizationContext.Current;
             }
             public SynchronizationContext uiContext;
-            private async void Exchange(Socket handler, List<string> theMessage)
+            private async void Exchange(Socket handler, string theMessage)
             {
                 await Task.Run(() =>
                 {
@@ -33,11 +33,11 @@ namespace ConsoleApplication1
                     {
                         byte[] msg;
                         int bytesSent;
-                        foreach (string s in theMessage)
-                        {
-                            msg = Encoding.Default.GetBytes(s); // конвертируем строку, содержащую сообщение, в массив байтов
+                        //foreach (string s in theMessage)
+                        //{
+                            msg = Encoding.Default.GetBytes(theMessage); // конвертируем строку, содержащую сообщение, в массив байтов
                             bytesSent = handler.Send(msg); // отправляем серверу сообщение через сокет
-                        }
+                        //}
                     }
                     catch (Exception ex)
                     {
@@ -71,14 +71,15 @@ namespace ConsoleApplication1
                             data = Encoding.Default.GetString(bytes, 0, bytesRec); // конвертируем массив байтов в строку
                             if (data.Contains("Get processes"))
                             {
-                                List<string> processNames = new List<string>();
+                                string processNames = string.Empty;
                                 foreach (Process process in Process.GetProcesses())
-                                    processNames.Add(process.ProcessName+"~");
+                                    processNames += process.ProcessName + "~";
                                 Exchange(handler, processNames);
                             }
                             else if (data.Contains("Create process"))
                             {
                                 data = data.Replace("Create process", null);
+                                //data.Split();
                                 Process.Start(data);
                             }
                             else if (data.Contains("Kill process"))
@@ -99,8 +100,8 @@ namespace ConsoleApplication1
                     catch (Exception ex)
                     {
                         Console.WriteLine("\nСервер: " + ex.Message+"\n");
-                        //handler.Shutdown(SocketShutdown.Both); // Блокируем передачу и получение данных для объекта Socket.
-                        //handler.Close(); // закрываем сокет
+                        handler.Shutdown(SocketShutdown.Both); // Блокируем передачу и получение данных для объекта Socket.
+                        handler.Close(); // закрываем сокет
                     }
                 });
             }
